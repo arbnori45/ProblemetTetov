@@ -38,16 +38,7 @@
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <script>
-        var map;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: -34.397, lng: 150.644 },
-                zoom: 8
-            });
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkPEhf-uPkyNI0nvWyWr34MTYFWlo-zG4&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkPEhf-uPkyNI0nvWyWr34MTYFWlo-zG4&callback=initMap&libraries=places"
         async defer></script>
 </body>
 </html>

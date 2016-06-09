@@ -1,13 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="Site1.Master" Title="Content Page" %>
-
-<script runat="server">
-
-    protected void Button1_Click(object sender, EventArgs e)
-    {
-
-    }
-</script>
-
+﻿<%@ Page Language="C#" MasterPageFile="Site1.Master" Title="Content Page"  CodeBehind="~/register.aspx.cs" Inherits="ProbTetov.Registration_Form" AutoEventWireup="True" %>
 
 <asp:Content ID="content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <script type="text/javascript">
@@ -43,7 +34,7 @@
 
                         <div class="form-group">
                             <label for="lblFname">*First Name:</label>
-                            <asp:TextBox ID="FirstName" class="form-control" runat="server" placeholder="Enter your First name"></asp:TextBox>
+                            <asp:TextBox ID="FirstName" name="first_name" class="form-control" runat="server" placeholder="Enter your First name"></asp:TextBox>
 
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator4"
                                 runat="server"
@@ -138,8 +129,9 @@
 
                         </div>
                         <div class="form-group">
-                            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
+                            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
                         </div>
+                        
                     </form>
                 </div>
             </div>
